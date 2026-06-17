@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Программы питания</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Диетолог онлайн</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="programs.html">Программы питания</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="page-head">
+      <h1>Программы питания</h1>
+      <p>Выберите подходящую программу для своей цели и образа жизни.</p>
+    </section>
+
+    <section class="catalog-panel">
+      <label class="search-label" for="program-search">Поиск программы</label>
+      <input class="search-input" id="program-search" type="search" placeholder="Например: похудение, спорт, веган">
+    </section>
+
+    <section class="programs-list">
+      <article class="program-card" data-title="Легкое похудение" data-price="2900" data-calories="1400" data-duration="21">
+        <h2>Легкое похудение</h2>
+        <p>Сбалансированное меню для плавного снижения веса без строгих ограничений.</p>
+        <div class="program-info">
+          <span>21 день</span>
+          <span>1400 ккал</span>
+          <span>2900 ₽</span>
+        </div>
+      </article>
+
+      <article class="program-card" data-title="Спортивный рацион" data-price="3900" data-calories="2400" data-duration="30">
+        <h2>Спортивный рацион</h2>
+        <p>Питание для активных тренировок, восстановления и поддержания энергии.</p>
+        <div class="program-info">
+          <span>30 дней</span>
+          <span>2400 ккал</span>
+          <span>3900 ₽</span>
+        </div>
+      </article>
+
+      <article class="program-card" data-title="Здоровая семья" data-price="5200" data-calories="2000" data-duration="28">
+        <h2>Здоровая семья</h2>
+        <p>Готовый план питания для всей семьи с простыми домашними блюдами.</p>
+        <div class="program-info">
+          <span>28 дней</span>
+          <span>2000 ккал</span>
+          <span>5200 ₽</span>
+        </div>
+      </article>
+
+      <article class="program-card" data-title="Веган баланс" data-price="3400" data-calories="1800" data-duration="21">
+        <h2>Веган баланс</h2>
+        <p>Растительная программа с достаточным количеством белка и витаминов.</p>
+        <div class="program-info">
+          <span>21 день</span>
+          <span>1800 ккал</span>
+          <span>3400 ₽</span>
+        </div>
+      </article>
+
+      <article class="program-card" data-title="Набор массы" data-price="4100" data-calories="3000" data-duration="30">
+        <h2>Набор массы</h2>
+        <p>Калорийное меню для увеличения массы тела и поддержки тренировочного режима.</p>
+        <div class="program-info">
+          <span>30 дней</span>
+          <span>3000 ккал</span>
+          <span>4100 ₽</span>
+        </div>
+      </article>
+
+      <article class="program-card" data-title="Офисный рацион" data-price="2500" data-calories="1700" data-duration="14">
+        <h2>Офисный рацион</h2>
+        <p>Удобное питание для рабочего дня с быстрыми завтраками, обедами и перекусами.</p>
+        <div class="program-info">
+          <span>14 дней</span>
+          <span>1700 ккал</span>
+          <span>2500 ₽</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="pagination" aria-label="Пагинация программ">
+      <button type="button" disabled>Назад</button>
+      <button type="button" class="active">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button">Вперед</button>
+    </section>
+  </main>
+</body>
+</html>
