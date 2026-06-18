@@ -159,6 +159,18 @@ h3 {
   margin-bottom: 28px;
 }
 
+.catalog-controls {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(220px, 320px);
+  gap: 18px;
+  align-items: end;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .search-label {
   display: block;
   margin-bottom: 10px;
@@ -166,17 +178,20 @@ h3 {
   font-weight: 700;
 }
 
-.search-input {
+.search-input,
+.sort-select {
   width: 100%;
-  max-width: 540px;
   padding: 14px 18px;
   border: 1px solid #cddccd;
   border-radius: 12px;
   font-size: 16px;
+  color: #243027;
+  background: #fff;
   outline: none;
 }
 
-.search-input:focus {
+.search-input:focus,
+.sort-select:focus {
   border-color: #4caf50;
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
 }
@@ -208,12 +223,30 @@ h3 {
   font-weight: 700;
 }
 
+.no-results {
+  margin: 28px 0 0;
+  padding: 22px;
+  border-radius: 16px;
+  background: #fff;
+  color: #56645a;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
 .pagination {
   margin-top: 34px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.pagination__pages {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pagination button {
@@ -332,6 +365,10 @@ h3 {
   .characteristics-grid,
   .reviews-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog-controls {
+    grid-template-columns: 1fr;
   }
 
   .product-detail {

@@ -25,8 +25,24 @@
     </section>
 
     <section class="catalog-panel">
-      <label class="search-label" for="program-search">Поиск программы</label>
-      <input class="search-input" id="program-search" type="search" placeholder="Например: похудение, спорт, веган">
+      <div class="catalog-controls">
+        <div class="field-group">
+          <label class="search-label" for="program-search">Поиск программы</label>
+          <input class="search-input" id="program-search" type="search" placeholder="Например: похудение, спорт, веган">
+        </div>
+
+        <div class="field-group">
+          <label class="search-label" for="program-sort">Сортировка</label>
+          <select class="sort-select" id="program-sort">
+            <option value="title-asc">По названию: А-Я</option>
+            <option value="title-desc">По названию: Я-А</option>
+            <option value="price-asc">По цене: сначала дешевле</option>
+            <option value="price-desc">По цене: сначала дороже</option>
+            <option value="calories-asc">По калориям: меньше</option>
+            <option value="calories-desc">По калориям: больше</option>
+          </select>
+        </div>
+      </div>
     </section>
 
     <section class="programs-list">
@@ -97,17 +113,18 @@
       </article>
     </section>
 
+    <p class="no-results" id="programs-empty" hidden>Программы не найдены. Попробуйте изменить поисковый запрос.</p>
+
     <section class="pagination" aria-label="Пагинация программ">
-      <button type="button" disabled>Назад</button>
-      <button type="button" class="active">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button">Вперед</button>
+      <button type="button" class="pagination__button" data-pagination="prev">Назад</button>
+      <div class="pagination__pages" id="pagination-pages"></div>
+      <button type="button" class="pagination__button" data-pagination="next">Вперед</button>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">© 2026 Диетолог онлайн</div>
   </footer>
+  <script src="programs.js"></script>
 </body>
 </html>
