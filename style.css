@@ -233,6 +233,65 @@ h3 {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
 }
 
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.about-content,
+.about-card,
+.cta-section {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.about-content h2,
+.cta-section h2 {
+  margin: 0 0 16px;
+  font-size: 30px;
+}
+
+.about-content p,
+.about-card p,
+.cta-section p {
+  margin: 0 0 16px;
+  color: #56645a;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.about-content p:last-child,
+.about-card p:last-child,
+.cta-section p:last-child {
+  margin-bottom: 0;
+}
+
+.about-card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-section p {
+  max-width: 620px;
+  margin: 0 auto 22px;
+}
+
 .pagination {
   margin-top: 34px;
   display: flex;
@@ -465,6 +524,11 @@ h3 {
   }
 
   .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section,
+  .about-values {
     grid-template-columns: 1fr;
   }
 
